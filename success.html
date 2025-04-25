@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Thank You</title>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      margin: 0;
+      padding: 0;
+      height: 100vh;
+      background-color: #f4f4f4;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    }
+
+    .confirmation-box {
+      background-color: #fff;
+      padding: 30px;
+      border-radius: 15px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.1);
+      text-align: center;
+      transform: translateY(20px);
+      opacity: 0;
+      transition: all 0.5s ease-in-out;
+      max-width: 600px;
+      width: 90%;
+    }
+
+    .confirmation-box.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    .confirmation-box img {
+      width: 100%;
+      max-width: 300px;
+      border-radius: 10px;
+      margin-bottom: 20px;
+    }
+
+    h2 {
+      color: #2200ff;
+      margin-bottom: 20px;
+    }
+
+    .user-detail {
+      font-size: 18px;
+      margin: 10px 0;
+    }
+
+    footer {
+      text-align: center;
+      padding: 15px;
+      font-weight: bold;
+      color: #0000ff;
+      font-size: 18px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="confirmation-box" id="confirmationBox">
+    <img src="https://www.tirumala.org/images/TTD%20Trust%20Board%20Members/TTD-BOARD-PAGE-PIC.jpg" alt="TTD Image" />
+    <h2>Details Submitted Successfully!</h2>
+  </div>
+
+  <footer>
+    By Donakonda Sai Krishna
+  </footer>
+
+  <script>
+    setTimeout(() => {
+      document.getElementById('confirmationBox').classList.add('visible');
+    }, 500);
+  </script>
+
+</body>
+</html>
