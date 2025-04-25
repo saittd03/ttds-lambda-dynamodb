@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>TTD Seva</title>
+  <style>
+    body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  min-height: 46vh;
+  background-color: #f9f9f9;
+  background-image: url('https://th-i.thgim.com/public/news/international/el1arj/article68878605.ece/alternates/LANDSCAPE_1200/1.jpg');
+  background-size: 69%;        /* Ensures the image covers the entire screen */
+  background-position: center;   /* Centers the image */
+  background-repeat: no-repeat;  /* Prevents the image from repeating */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+    .top-banner {
+      width: 60%;
+      max-width: 500px;
+      margin-top: 20px;
+      border-radius: 15px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    }
+
+    form {
+      background-color: #fff;
+      padding: 20px;
+      margin: 20px;
+      border-radius: 25px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      border-style: groove;
+      border-color: rgb(9, 205, 9);
+      width: 90%;
+      max-width: 600px;
+      transition: transform 0.3s ease-in-out;
+      backdrop-filter: blur(3px);
+    }
+
+    h1 {
+      text-align: center;
+      color: #c81414;
+      margin-top: 20px;
+      background-color: rgb(244, 250, 154);
+      font-family: unset;
+      width: 100%;
+      padding: 10px 0;
+    }
+
+    h2 {
+      text-align: center;
+      color: #128de5;
+      margin-bottom: 20px;
+      font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    }
+
+    label {
+      display: block;
+      margin: 10px 0 5px;
+      color: #555;
+      font-size: larger;
+      font-family: cursive;
+    }
+
+    input, textarea {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 10px;
+      box-sizing: border-box;
+      border: 1px solid #ccc;
+      border-radius: 15px;
+      border-color: aqua;
+    }
+
+    input[type="submit"] {
+      background-color: #a7386c;
+      color: #fff;
+      cursor: pointer;
+      font-size: 16px;
+      border: none;
+      width: 250px;
+    }
+
+    input[type="submit"]:hover {
+      background-color: #45a049;
+    }
+
+    form:hover {
+      transform: scale(1.02);
+      border-color: gold;
+    }
+
+    footer {
+      margin-top: 20px;
+      font-size: 18px;
+      text-align: center;
+      color: blue;
+      font-weight: bold;
+    }
+
+    @media screen and (max-width: 600px) {
+      .top-banner {
+        width: 90%;
+      }
+
+      form {
+        width: 90%;
+        padding: 15px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <img class="top-banner" src="https://www.ttdsevaonline.net/wp-content/uploads/2018/02/ttd-tirumala-srivari-seva-services.png" alt="Cloud Banner">
+
+  <h1>Welcome to TTD Seva Fill Your Details</h1>
+
+  <form action="/dev" method="post">
+    <h2>TTD Seva Details</h2>
+
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" required />
+
+    <label for="aadhar">Aadhar Number:</label>
+    <input type="text" id="aadhar" name="aadhar" pattern="\d{12}" title="Enter a 12-digit Aadhar number" required />
+
+    <label for="fathername">Father Name:</label>
+    <input type="text" id="fathername" name="fathername" required />
+
+    <label for="dob">Date of Birth:</label>
+    <input type="date" id="dob" name="dob" required />
+
+    <label for="mobile">Mobile Number:</label>
+    <input type="text" id="mobile" name="mobile" pattern="\d{10}" title="Enter a 10-digit mobile number" required />
+
+    <label for="address">Address:</label>
+    <textarea id="address" name="address" rows="3" required></textarea>
+
+    <label for="state">State:</label>
+    <input type="text" id="state" name="state" required />
+
+    <label for="pincode">Pin Code:</label>
+    <input type="text" id="pincode" name="pincode" pattern="\d{6}" title="Enter a 6-digit pin code" required />
+
+    <div style="text-align: center;">
+      <input type="submit" value="Submit" />
+    </div>
+  </form>
+
+  <footer>
+    By Donakonda Sai Krishna
+  </footer>
+
+</body>
+</html>
